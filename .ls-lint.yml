@@ -1,0 +1,6 @@
+ls:
+  src:
+    .ts: camelCase
+    .d.ts: kebab-case
+    .vue: camelCase | PascalCase
+    .dir: camelCase | PascalCase
