@@ -47,12 +47,10 @@ export default class CMenu extends Vue {
 
 <style lang="scss" scoped>
 @mixin menu-active {
-  &.is-active {
-    background: $base-header-background-active !important;
+  background: $base-header-background-active !important;
 
-    & i {
-      color: $base-header-text-color-active;
-    }
+  & i {
+    color: $base-header-text-color-active;
   }
 }
 
@@ -69,9 +67,9 @@ export default class CMenu extends Vue {
   user-select: none;
 
   ::v-deep {
+    /* hover */
     .el-menu-item {
       @include menu-hover;
-      @include menu-active;
     }
 
     .el-submenu {
@@ -79,13 +77,6 @@ export default class CMenu extends Vue {
         @include menu-hover;
       }
 
-      @include menu-active;
-
-      .el-menu-item {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
       /* hack element-ui arrow */
       &__icon-arrow {
         right: 5px;
@@ -94,6 +85,17 @@ export default class CMenu extends Vue {
         &.el-icon-arrow-right {
           right: 10px;
         }
+      }
+    }
+
+    /* active */
+    .el-menu-item.is-active {
+      @include menu-active;
+    }
+
+    .el-submenu.is-active {
+      .el-submenu__title {
+        @include menu-active;
       }
     }
   }
