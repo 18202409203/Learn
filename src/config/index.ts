@@ -19,7 +19,7 @@ export const iconText: iconTextType = "iconText";
 export const mouseTrigger: mouseTriggerType = "hover";
 
 /* 页脚版权信息 */
-export const copyright = "Cambricon";
+export const copyright = "ZhuPengji";
 
 /* 浏览器标题栏后缀 */
-export const documentTitle = "ToolBox";
+export const documentTitle = "ZPJ";

@@ -14,9 +14,9 @@ $base-color-grey: rgba(0, 0, 0, 0.65);
 $base-color-grey-light: #f5f7f9;
 
 /* default */
-$base-color-default: $base-color-blue;
-$base-color-default-light: $base-color-blue-light;
-$base-color-default-dark: $base-color-blue-dark;
+$base-color-default: $base-color-white;
+$base-color-default-light: $base-color-grey-light;
+$base-color-default-dark: $base-color-grey;
 
 /* layout */
 $base-background: $base-color-grey-light;
@@ -26,7 +26,7 @@ $base-header-height: 56px;
 $base-header-background: $base-color-default;
 $base-header-background-hover: $base-color-default-light;
 $base-header-background-active: $base-color-default-dark;
-$base-header-text-color: $base-color-white;
+$base-header-text-color: $base-color-black;
 $base-header-text-color-active: $base-color-white;
 
 /* main */

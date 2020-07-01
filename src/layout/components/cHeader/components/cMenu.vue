@@ -4,6 +4,7 @@
     <el-submenu
       v-if="menu.children && menu.children.length >= 1"
       :index="menu.name"
+      popper-append-to-body
     >
       <template slot="title">
         <c-icon-text

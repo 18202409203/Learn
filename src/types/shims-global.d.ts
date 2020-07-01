@@ -4,6 +4,7 @@ declare module "element-ui";
 
 // images
 declare module "*.jpg";
+declare module "*.png";
 
 // styles
 declare module "*.scss" {

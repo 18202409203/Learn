@@ -24,7 +24,8 @@ export function getMenuByRoutes(
     },
     []
   );
-  return isMergeMenu
+  /* 当一级菜单有两个及以上，同时isMergeMenu为真时，合并进一个根菜单 */
+  return isMergeMenu && menuItems.length > 1
     ? [
         {
           name: "Menu",

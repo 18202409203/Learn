@@ -1,8 +1,9 @@
-# toolkit-platform-fe
+# Learn Type Vue
 
-## 运行
+## 说明
 
-相关命令见 package.json
+* 这是一个使用 `typescript`的`vue`项目，并且使用了类语法（`vue-class-component` + `vue-property-decorator` + `vuex-class`）
+* 使用了`Element-ui`
 
 ## 提交信息规范
 
@@ -31,7 +32,7 @@
  .dir: camelCase | PascalCase
 ```
 
-自定义组件采用统一的前缀开头，以字母c(cambricon)开头，例`cHeader.vue`
+自定义组件采用统一的前缀开头，以字母c开头，例`cHeader.vue`
 
 
 ## 代码风格
