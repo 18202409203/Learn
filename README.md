@@ -1,34 +1,49 @@
 # toolkit-platform-fe
 
-## Project setup
+## 运行
+
+相关命令见 package.json
+
+## 提交信息规范
+
+`type(scope): subject(#issue)`
+
+| type | 解释 |
+| - | - |
+|feat     |新增功能                |
+|fix      |修复/修改               |
+|docs     |文档修改                |
+|refactor |重构/代码结构变动       |
+|build    |构建相关                |
+|style    |样式，无关逻辑          |
+|perf     |性能优化                |
+|chore    |非src/test的琐碎工作    |
+|test     |测试文件                |
+|ci       |CI/CD文件               |
+|revert   |撤销                    |
+
+## 文件命名规则
+
 ```
-yarn install
+ .ts: camelCase
+ .d.ts: kebab-case
+ .vue: camelCase | PascalCase
+ .dir: camelCase | PascalCase
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+自定义组件采用统一的前缀开头，以字母c(cambricon)开头，例`cHeader.vue`
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Run your unit tests
-```
-yarn test:unit
-```
+## 代码风格
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
+```json
+{
+  "useTabs": false, // 不用tab
+  "tabWidth": 2, // 缩进2
+  "semi": true, // 分号结尾
+  "bracketSpacing": true, // { 括号前后留空格 }
+  "arrowParens": "avoid", // 箭头函数单参不要圆括号 x => {}
+  "spaced-comment": "warn" // 注释符后跟一空格
+}
 
-### Lints and fixes files
 ```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

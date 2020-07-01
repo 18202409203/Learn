@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "./variables.scss";
+
+.c-header-text {
+  color: $base-header-text-color;
+  font-size: $base-font-size;
+}
+
+.c-debug {
+  border: 1px red solid;
+}

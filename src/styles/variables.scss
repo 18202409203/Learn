@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* color */
+$base-color-blue: #1890ff;
+$base-color-blue-light: #66b1ff;
+$base-color-blue-dark: rgb(19, 115, 204);
+$base-color-green: #13ce66;
+$base-color-white: #fff;
+$base-color-black: #000;
+$base-color-yellow: #ffba00;
+$base-color-orange: #ff6700;
+$base-color-red: #ff4d4f;
+$base-color-grey: rgba(0, 0, 0, 0.65);
+$base-color-grey-light: #f5f7f9;
+
+/* default */
+$base-color-default: $base-color-blue;
+$base-color-default-light: $base-color-blue-light;
+$base-color-default-dark: $base-color-blue-dark;
+
+/* layout */
+$base-background: $base-color-grey-light;
+
+/* header */
+$base-header-height: 56px;
+$base-header-background: $base-color-default;
+$base-header-background-hover: $base-color-default-light;
+$base-header-background-active: $base-color-default-dark;
+$base-header-text-color: $base-color-white;
+$base-header-text-color-active: $base-color-white;
+
+/* main */
+$base-main-background: $base-color-grey-light;
+
+/* font */
+$base-font-size-sm: 12px;
+$base-font-size: 14px;
+$base-font-size-lg: 16px;
+$base-font-size-xl: 18px;
+
+/* BFC */
+$base-padding-xs: 1px;
+$base-padding-sm: 5px;
+$base-padding: 10px;
+$base-padding-lg: 15px;
+$base-padding-xl: 20px;
+$base-margin-xs: 1px;
+$base-margin-sm: 5px;
+$base-margin: 10px;
+$base-margin-lg: 15px;
+$base-margin-xl: 20px;
+$base-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+
+/* stylelint-disable */
+:export {
+  header-height: $base-header-height;
+  header-text-color: $base-header-text-color;
+  header-text-color-active: $base-header-text-color-active;
+  header-background: $base-header-background;
+  header-background-active: $base-header-background-active;
+}

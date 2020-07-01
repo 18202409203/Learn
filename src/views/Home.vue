@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <c-card>
+      <h1>{{ msg }}</h1>
+      <el-button @click="query">查询</el-button>
+    </c-card>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script lang="ts">
+import { cCard } from "@/components";
+import { getExampleList } from "@/api/axios/example";
+import { Vue, Component } from "vue-property-decorator";
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld
+@Component({
+  components: { cCard }
+})
+export default class Home extends Vue {
+  msg = "Welcome";
+
+  async query() {
+    const responseData = await getExampleList();
+    console.log(responseData);
   }
-};
+}
 </script>
